@@ -336,4 +336,4 @@ app.get("/mycustomorder/:id", async function (req, res) {
     }
 });
 
-app.listen(3003, () => { console.log("app is running") })
+app.listen(process.env.PORT || 3000)
